@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" spacing="5.0" stylesheets="@../styles/dark.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="590.0" spacing="5.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="166.0" styleClass="custom-label" text="Selected company:" />
+            <Label fx:id="selectedCompanyLabel" alignment="CENTER" prefHeight="30.0" prefWidth="200.0" styleClass="custom-label" />
+            <Button fx:id="addNewCompanyButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="175.0" text="Company">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/baseline_add_circle_white_48dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </HBox>
+      <TableView fx:id="companyTableView" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="550.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" editable="false" maxWidth="106.0" minWidth="106.0" prefWidth="106.0" resizable="false" text="Name" />
+          <TableColumn fx:id="countryColumn" editable="false" maxWidth="106.0" minWidth="106.0" prefWidth="106.0" resizable="false" text="Country" />
+            <TableColumn fx:id="cityColumn" editable="false" maxWidth="106.0" minWidth="106.0" prefWidth="106.0" resizable="false" text="City" />
+            <TableColumn fx:id="streetColumn" editable="false" maxWidth="106.0" minWidth="106.0" prefWidth="106.0" resizable="false" text="Street" />
+            <TableColumn fx:id="zipCodeColumn" editable="false" maxWidth="106.0" minWidth="106.0" prefWidth="106.0" resizable="false" text="Zip-code" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="500.0" spacing="5.0">
+         <children>
+            <Button fx:id="cancelButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="175.0" text="Cancel">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/baseline_cancel_white_48dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="applyButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="175.0" text="Apply">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/baseline_check_circle_white_48dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+         <padding>
+            <Insets right="25.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

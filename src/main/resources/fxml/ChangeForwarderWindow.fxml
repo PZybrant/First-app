@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="850.0" stylesheets="@../styles/dark.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <TableView fx:id="forwarderTableView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="411.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="idColumn" editable="false" maxWidth="130.0" minWidth="130.0" prefWidth="120.0" resizable="false" text="ID number" />
+          <TableColumn fx:id="firstNameColumn" editable="false" maxWidth="130.0" minWidth="130.0" prefWidth="120.0" resizable="false" text="First name" />
+            <TableColumn fx:id="lastNameColumn" editable="false" maxWidth="138.0" minWidth="130.0" prefWidth="130.0" resizable="false" text="Last name" />
+        </columns>
+      </TableView>
+   </center>
+   <right>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="430.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="220.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" minWidth="-Infinity" prefHeight="30.0" prefWidth="230.0" styleClass="custom-label" text="CURRENT FORWARDER: " underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="ID number:">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="First name:">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="Last name:">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Separator prefWidth="200.0" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="230.0" styleClass="custom-label" text="NEW FORWARDER: " underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="ID number:">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="First name:">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="Last name:">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="cancelButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" text="Cancel">
+                     <VBox.margin>
+                        <Insets top="45.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_cancel_white_48dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="0.0" />
+                  <Label fx:id="currentForwarderIdLabel" prefHeight="30.0" prefWidth="170.0" styleClass="custom-label">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="currentForwarderFirstNameLabel" prefHeight="30.0" prefWidth="170.0" styleClass="custom-label">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="currentForwarderLastNameLabel" prefHeight="30.0" prefWidth="170.0" styleClass="custom-label">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Separator prefWidth="200.0" />
+                  <Label prefHeight="25.0" prefWidth="0.0" />
+                  <Label fx:id="newForwarderIdLabel" prefHeight="30.0" prefWidth="170.0" styleClass="custom-label">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="newForwarderFirstNameLabel" prefHeight="30.0" prefWidth="170.0" styleClass="custom-label">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="newForwarderLastNameLabel" prefHeight="30.0" prefWidth="170.0" styleClass="custom-label">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="applyButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" text="Apply">
+                     <VBox.margin>
+                        <Insets top="45.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_check_circle_white_48dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </right>
+</BorderPane>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" stylesheets="@../styles/dark.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" minHeight="-Infinity" prefHeight="60.0" prefWidth="550.0" spacing="4.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="130.0" styleClass="custom-label" text="Cargo type:" />
+            <ChoiceBox fx:id="cargoTypeChoiceBox" prefHeight="45.0" prefWidth="400.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" minHeight="-Infinity" prefHeight="60.0" prefWidth="550.0" spacing="4.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="130.0" styleClass="custom-label" text="Sent from:" />
+            <Label fx:id="senderLabel" alignment="CENTER" minWidth="-Infinity" prefHeight="35.0" prefWidth="260.0" styleClass="custom-label" />
+            <Button fx:id="setSenderButton" minWidth="-Infinity" mnemonicParsing="false" prefHeight="45.0" prefWidth="140.0" text="Set" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" minHeight="-Infinity" prefHeight="60.0" prefWidth="550.0" spacing="4.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="130.0" styleClass="custom-label" text="Destination:" />
+            <Label fx:id="customerLabel" alignment="CENTER" minWidth="-Infinity" prefHeight="35.0" prefWidth="260.0" styleClass="custom-label" />
+            <Button fx:id="setCustomerButton" minWidth="-Infinity" mnemonicParsing="false" prefHeight="45.0" prefWidth="140.0" text="Set" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" minHeight="-Infinity" prefHeight="60.0" prefWidth="550.0" spacing="4.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="130.0" styleClass="custom-label" text="Distance:" />
+            <TextField fx:id="distanceTextField" prefHeight="45.0" prefWidth="400.0" promptText="Type distance in km" styleClass="distance-text-field" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" minHeight="-Infinity" prefHeight="100.0" prefWidth="550.0" spacing="4.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="130.0" styleClass="custom-label" text="Description:" />
+            <TextArea fx:id="descriptionTextArea" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="400.0" promptText="Place for a short description of the cargo. (e.g. apples -3t, oranges-5t etc.)" styleClass="text-area" />
+         </children>
+      </HBox>
+      <Label fx:id="warningMessage" alignment="CENTER" prefHeight="35.0" prefWidth="450.0" styleClass="warning-label" textFill="#d70d0d" />
+      <HBox alignment="BOTTOM_RIGHT" minHeight="-Infinity" prefHeight="82.0" prefWidth="600.0" spacing="4.0">
+         <children>
+            <Button fx:id="cancelButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" text="Cancel">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/baseline_cancel_white_48dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="applyButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" text="Apply">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/baseline_check_circle_white_48dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="4.0" right="4.0" top="4.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

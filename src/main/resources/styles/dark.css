@@ -1,0 +1,514 @@
+* {
+ -fx-background: #171D40;
+ -fx-primary: #283564;
+ -fx-second: #364577;
+ -fx-third: #6F7A9B;
+}
+
+.root {
+ -fx-background-color: -fx-background;
+}
+
+.anchor-pane {
+ -fx-background-color: -fx-primary;
+}
+
+.h-box {
+ -fx-background-color: -fx-primary;
+}
+
+.button-background {
+ -fx-background-color: -fx-second;
+ -fx-background-radius: 20 20 0 0;
+}
+
+.frame-pane {
+ -fx-background-color: -fx-second;
+}
+
+.scroll-pane, .scroll-pane > .viewport {
+ -fx-background-color: -fx-primary;
+}
+
+.custom-label {
+ -fx-text-fill: #FFFFFF;
+ -fx-font-size: 20;
+ -fx-font-style: italic;
+}
+
+.warning-label {
+ -fx-text-fill: #B2271D;
+ -fx-font-size: 18;
+ -fx-font-style: italic;
+}
+
+.button {
+ -fx-background-color: -fx-primary;
+ -fx-background-radius: 20 20 20 20;
+ -fx-text-fill: #fff;
+ -fx-font-size: 20;
+ -fx-font-style: italic;
+}
+
+.button: hover {
+ -fx-background-color: -fx-second;
+ -fx-font-size: 22;
+}
+
+.user-button, .main-button {
+ -fx-background-color: -fx-second;
+ -fx-background-radius: 20 20 20 20;
+ -fx-text-fill: #fff;
+ -fx-font-size: 20;
+ -fx-font-style: italic;
+ -fx-pref-width: 275;
+ -fx-pref-height: 90;
+}
+
+.user-button: hover, .main-button: hover {
+ -fx-background-color: -fx-third;
+ -fx-font-size: 22;
+}
+
+/***************************************************************************************************
+***************************************** CHOICE-BOX ***********************************************
+***************************************************************************************************/
+
+.choice-box {
+ -fx-background-color: -fx-primary;
+ -fx-background-radius: 20;
+}
+
+.choice-box > .open-button > .arrow{
+ -fx-background-color: #FFFFFF;
+ -fx-font-size: 20;
+}
+
+.choice-box .label {
+ -fx-text-fill: #FFFFFF;
+ -fx-font-size: 20;
+ -fx-font-style: italic;
+}
+
+.choice-box: hover{
+ -fx-background-color: -fx-second;
+}
+.choice-box > .label: hover {
+ -fx-font-size: 22;
+}
+
+.choice-box > .context-menu {
+ -fx-background-color: -fx-primary;
+ -fx-background-radius: 20;
+}
+
+.choice-box > .menu-item {
+ -fx-background-color: -fx-primary;
+ -fx-background-radius: 20;
+ }
+
+.choice-box > .menu-item > .label{
+ -fx-text-fill: #FFFFFF;
+ -fx-font-size: 20;
+ -fx-font-style: Italic;
+ -fx-alignment: center;
+ -fx-text-alignment: center;
+}
+
+.choice-box > .menu-item: hover{
+ -fx-background-color: #FF7878;
+}
+
+/***************************************************************************************************
+***************************************** MENU-BUTTON **********************************************
+***************************************************************************************************/
+
+.menu-button {
+ -fx-background-color: -fx-primary;
+ -fx-background-radius: 20;
+}
+
+.menu-button > .label{
+ -fx-text-fill: #FFFFFF;
+ -fx-font-size: 20;
+ -fx-font-style: Italic;
+}
+
+.menu-button > .arrow-button > .arrow{
+ -fx-background-color: #FFFFFF;
+ -fx-font-size: 20;
+}
+
+.menu-button: hover {
+ -fx-background-color: -fx-second;
+}
+
+.menu-button > .label: hover{
+ -fx-font-size: 22;
+ -fx-background-radius: 20;
+ }
+
+.context-menu {
+ -fx-background-color: -fx-primary;
+ -fx-background-radius: 20;
+}
+
+.menu-item {
+ -fx-background-color: -fx-primary;
+ -fx-background-radius: 20;
+ }
+
+.menu-item > .label{
+ -fx-text-fill: #FFFFFF;
+ -fx-font-size: 20;
+ -fx-font-style: Italic;
+ -fx-alignment: center;
+ -fx-text-alignment: center;
+}
+.menu-item: hover{
+ -fx-background-color: #FF7878;
+}
+
+/***************************************************************************************************
+***************************************** TEXT-FIELD ***********************************************
+***************************************************************************************************/
+
+.text-field {
+ -fx-background-radius: 20;
+ -fx-text-fill: -fx-second;
+ -fx-font-size: 16;
+ -fx-font-style: italic;
+}
+
+.text-field: focused{
+ -fx-border-color: #FF7878;
+ -fx-border-radius: 20;
+ -fx-border-insets: -1;
+ -fx-border-width: 3;
+}
+
+/***************************************************************************************************
+***************************************** TABLE-VIEW ***********************************************
+***************************************************************************************************/
+
+.table-view {
+ -fx-background-color: -fx-third;
+ -fx-border-color: -fx-third;
+ -fx-border-width: 2;
+}
+
+.table-view > .column-header-background, .table-view .filler {
+ -fx-background-color: transparent;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background,
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+ -fx-background-color: transparent;
+}
+
+.table-view > .virtual-flow > .scroll-bar > .thumb {
+ -fx-background-color: -fx-second;
+}
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button > .increment-arrow,
+.table-view > .virtual-flow > .scroll-bar > .decrement-button > .decrement-arrow{
+ -fx-background-color: #FFFFFF;
+ -fx-font-size: 15;
+}
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button: hover,
+.table-view > .virtual-flow > .scroll-bar > .decrement-button: hover{
+ -fx-background-color: -fx-second;
+}
+
+.table-view .column-header {
+ -fx-background-color: -fx-third;
+}
+
+.table-view > .column-header-background > .label {
+ -fx-text-fill: #FFFFFF;
+ -fx-font-size: 15;
+ -fx-font-style: italic;
+}
+
+.table-view > .table-cell {
+ -fx-text-fill: #FFFFFF;
+ -fx-font-size: 13;
+ -fx-font-style: italic;
+}
+
+.table-row-cell: odd {
+ -fx-background-color: #555555;
+}
+
+.table-row-cell: even {
+ -fx-background-color: #262626;
+}
+
+.table-row-cell: selected {
+ -fx-background-color: #FF7878;
+ -fx-table-cell-border-color: #FFFFFF;
+}
+
+/**************************************************************************************************
+***************************************** TEXT-AREA ***********************************************
+**************************************************************************************************/
+
+.text-area {
+ -fx-background-color: -fx-second;
+ -fx-text-fill: -fx-second;
+ -fx-font-size: 14;
+ -fx-font-style: italic;
+ -fx-background-radius: 30;
+}
+
+.text-area .content {
+ -fx-background-radius: 30;
+}
+
+.text-area:focused .content{
+ -fx-border-color: #FF7878;
+ -fx-border-radius: 30;
+ -fx-border-width: 4;
+ -fx-border-insets: -1;
+}
+
+.text-area > .scroll-pane, .text-area > .scroll-pane > .viewport{
+ -fx-background-color: -fx-background;
+ -fx-background-radius: 30;
+}
+
+
+
+/**************************************************************************************************
+***************************************** DATE-PICKER *********************************************
+**************************************************************************************************/
+
+.date-picker {
+ -fx-background-radius: 20;
+}
+
+.date-picker > .arrow-button > * {
+ -fx-min-width: 25;
+ -fx-pref-width: 25;
+ -fx-max-width: 25;
+ -fx-opacity: 0;
+}
+
+
+.date-picker > .arrow-button {
+ -fx-background-color: -fx-primary;
+ -fx-border-color: transparent;
+ -fx-background-radius: 0 20 20 0;
+ -fx-background-image: url("../images/baseline_date_range_white_48dp.png");
+ -fx-background-size: 50% 65%;
+ -fx-background-repeat: no-repeat;
+ -fx-background-position: center center;
+}
+
+.date-picker > .arrow-button: hover{
+ -fx-background-color: -fx-second;
+ -fx-background-size: 60% 75%;
+}
+
+.date-picker: focused{
+ -fx-background-color: #ff7878;
+ -fx-border-radius: 20;
+ -fx-border-insets: -1;
+ -fx-border-color: #ff7878;
+}
+
+.date-picker > .text-field {
+ -fx-background-color: #FFFFFF;
+ -fx-background-radius: 20 0 0 20;
+ -fx-border-width: 0;
+ -fx-text-fill: -fx-second;
+ -fx-font-size: 15;
+ -fx-font-style: italic;
+}
+
+.date-picker-popup {
+ -fx-background-color: -fx-primary;
+ -fx-background-radius: 20;
+ -fx-alignment: CENTER;
+}
+
+.date-picker-popup > .month-year-pane {
+ -fx-background-color: -fx-primary;
+ -fx-background-radius: 20 20 0 0;
+ -fx-text-fill: #FFFFFF;
+ -fx-font-size: 15;
+ -fx-font-style: italic;
+}
+
+.date-picker-popup > * > .spinner > .button {
+ -fx-background-color: -fx-primary;
+ -fx-min-width: 23;
+ -fx-min-height: 23;
+ -fx-max-width: 23;
+ -fx-max-height: 23;
+}
+
+.date-picker-popup > * > .spinner > .button: hover {
+ -fx-background-color: -fx-second;
+ -fx-font-size: 23;
+}
+
+.date-picker-popup > * > .spinner > .button > .left-arrow,
+.date-picker-popup > * > .spinner > .button > .right-arrow {
+ -fx-background-color: #FFFFFF;
+}
+
+.date-picker-popup > * > .spinner > .label {
+ -fx-alignment: CENTER;
+}
+
+.date-picker-popup > .calendar-grid {
+ -fx-background-color: -fx-second;
+}
+
+.date-picker-popup > * > .date-cell{
+ -fx-background-color: -fx-background;
+ -fx-border-color: transparent;
+ -fx-background-radius: 20;
+ -fx-min-width: 40;
+ -fx-min-height: 40;
+ -fx-max-width: 40;
+ -fx-max-height: 40;
+}
+
+.date-picker-popup > * > .day-name-cell {
+ -fx-background-color: -fx-second;
+ -fx-text-fill: #ff7878;
+ -fx-font-style: italic;
+}
+
+.date-picker-popup > * > .week-number-cell{
+ -fx-background-color: -fx-second;
+ -fx-text-fill: #ff7878;
+ -fx-font-style: italic;
+}
+
+.date-picker-popup > * > .today {
+ -fx-background-color: #ff7878;
+ -fx-background-insets: 2;
+ -fx-background-radius: 20;
+}
+.date-picker-popup > * > .day-cell: hover,
+.date-picker-popup > * > .selected {
+ -fx-background-color: -fx-third;
+ -fx-background-insets: 0;
+ -fx-font-size: 16;
+ -fx-background-radius: 20;
+}
+
+.date-picker-popup > * > .today: hover,
+.date-picker-popup > * > .today.selected {
+ -fx-background-color: #ff9f9f;
+ -fx-background-insets: 0;
+ -fx-font-size: 16;
+ -fx-background-radius: 20;
+}
+
+.date-picker-popup > * > .previous-month: hover,
+.date-picker-popup > * > .next-month: hover,
+.date-picker-popup > * > .previous-month.selected,
+.date-picker-popup > * > .next-month.selected {
+ -fx-background-color: #909090;
+ -fx-background-insets: 0;
+ -fx-font-size: 16;
+ -fx-background-radius: 20;
+}
+
+.date-picker-popup > * > .next-month,
+.date-picker-popup > * > .previous-month{
+ -fx-background: #555555;
+}
+
+/***************************************************************************************************
+*************************************** COMBO-BOX **************************************************
+***************************************************************************************************/
+
+.combo-box{
+ -fx-background-color: -fx-primary;
+ -fx-background-radius: 20;
+}
+
+.combo-box: hover{
+ -fx-background-color: -fx-second;
+}
+
+.combo-box: focused{
+ -fx-border-color: #ff7878;
+ -fx-border-radius: 20;
+ -fx-border-width: 2;
+ -fx-border-insets: -2;
+}
+
+.combo-box > .list-cell{
+ -fx-text-fill: #FFFFFF;
+ -fx-font-size: 14;
+ -fx-font-style: italic;
+}
+
+.combo-box > .arrow-button{
+ -fx-background-color: transparent;
+ -fx-background-radius: 0 20 20 0;
+}
+
+.combo-box > .arrow-button > .arrow{
+ -fx-background-color: #FFFFFF;
+}
+
+.combo-box-popup > .list-view {
+ -fx-background-color: -fx-primary;
+ -fx-background-radius: 20 0 0 20;
+ -fx-alignment: center-right;
+}
+
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell{
+ -fx-background-color: -fx-primary;
+ -fx-background-radius: 20 0 0 20;
+ -fx-text-fill: #FFFFFF;
+ -fx-font-size: 14;
+ -fx-font-style: italic;
+}
+
+.combo-box-popup > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:hover,
+.combo-box-popup  > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected:hover{
+    -fx-background-color: #ff9f9f;
+}
+
+.combo-box-popup  > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:selected{
+ -fx-background-color: #ff7878;
+}
+
+.combo-box-popup > .list-view > .virtual-flow > .scroll-bar:vertical{
+ -fx-background-color: -fx-second;
+}
+
+.combo-box-popup > .list-view > .virtual-flow > .scroll-bar > .thumb{
+ -fx-background-color: -fx-third;
+ -fx-background-radius: 5;
+}
+
+.combo-box-popup > .list-view > .virtual-flow > .scroll-bar > .increment-button > .increment-arrow,
+.combo-box-popup > .list-view > .virtual-flow > .scroll-bar > .decrement-button > .decrement-arrow{
+ -fx-background-color: #FFFFFF;
+ -fx-font-size: 15;
+}
+
+.combo-box-popup > .list-view > .virtual-flow > .scroll-bar > .increment-button: hover,
+.combo-box-popup > .list-view > .virtual-flow > .scroll-bar > .decrement-button: hover{
+ -fx-background-color: -fx-third;
+}
+
+
+
+
+
+

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" stylesheets="@../styles/dark.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="375.0" minWidth="375.0" prefWidth="375.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="375.0" minWidth="375.0" prefWidth="375.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="-Infinity" prefHeight="135.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="-Infinity" prefHeight="215.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <Separator prefWidth="200.0" />
+                  <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="SENDER" underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="Name: ">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="Country: ">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="City: ">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="Street: ">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="Zip-code: ">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Label>
+                  <Separator prefWidth="200.0" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding></VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="232.0" prefWidth="250.0" spacing="5.0">
+               <children>
+                  <Separator prefWidth="130.0">
+                     <padding>
+                        <Insets bottom="35.0" />
+                     </padding>
+                  </Separator>
+                  <Label fx:id="senderNameLabel" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="220.0" styleClass="custom-label">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="senderCountryLabel" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="220.0" styleClass="custom-label">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="senderCityLabel" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="220.0" styleClass="custom-label">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="senderStreetLabel" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="220.0" styleClass="custom-label">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="senderZipCodeLabel" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="220.0" styleClass="custom-label">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Separator prefWidth="200.0" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <Separator maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="230.0" prefWidth="6.0">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </Separator>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Separator maxHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="230.0" rotate="180.0">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </Separator>
+            <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <Separator prefWidth="200.0" />
+                  <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="CUSTOMER" underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="Name: ">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="Country: ">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="City: ">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="Street: ">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="Zip-code: ">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Label>
+                  <Separator prefWidth="200.0" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="232.0" prefWidth="252.0" spacing="5.0">
+               <children>
+                  <Separator prefWidth="200.0">
+                     <padding>
+                        <Insets bottom="35.0" />
+                     </padding>
+                  </Separator>
+                  <Label fx:id="customerNameLabel" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="220.0" styleClass="custom-label">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="customerCountryLabel" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="220.0" styleClass="custom-label">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="customerCityLabel" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="220.0" styleClass="custom-label">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="customerStreetLabel" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="220.0" styleClass="custom-label">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="customerZipCodeLabel" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="220.0" styleClass="custom-label">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Label>
+                  <Separator prefWidth="220.0" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="133.0" prefWidth="300.0">
+         <children>
+            <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="Type:" />
+                  <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="Distance: " />
+                  <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="Date of order: " />
+                  <Label alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="Delivery date: " textAlignment="CENTER" wrapText="true" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="152.0" prefWidth="250.0" spacing="5.0">
+               <children>
+                  <Label fx:id="cargoTypeLabel" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="220.0" styleClass="custom-label" />
+                  <Label fx:id="cargoDistanceLabel" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="220.0" styleClass="custom-label" />
+                  <Label fx:id="cargoOrderDateLabel" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="220.0" styleClass="custom-label" />
+                  <Label fx:id="cargoDeliveryDateLabel" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="220.0" styleClass="custom-label" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="68.0" prefWidth="300.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="closeButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" text="Close">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/baseline_cancel_white_48dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.columnIndex="1">
+         <children>
+            <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" styleClass="custom-label" text="Description:" />
+            <TextArea fx:id="cargoDescriptionTextArea" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="330.0" wrapText="true" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</GridPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" stylesheets="@../styles/dark.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="130.0" styleClass="custom-label" text="Name: " />
+            <TextField fx:id="nameTextField" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="400.0" styleClass="text-field" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="130.0" styleClass="custom-label" text="Country: " />
+            <TextField fx:id="countryTextField" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="400.0" styleClass="text-field" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="130.0" styleClass="custom-label" text="City: " />
+            <TextField fx:id="cityTextField" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="400.0" styleClass="text-field" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="130.0" styleClass="custom-label" text="Street: " />
+            <TextField fx:id="streetTextField" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="400.0" styleClass="text-field" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="130.0" styleClass="custom-label" text="Zip-code: " />
+            <TextField fx:id="zipCodeTextField" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="400.0" styleClass="text-field" />
+         </children>
+      </HBox>
+      <Label fx:id="warningLabel" alignment="CENTER" prefHeight="27.0" prefWidth="500.0" styleClass="warning-label" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Button fx:id="cancelButton" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="175.0" text="Cancel">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/baseline_cancel_white_48dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="applyButton" minWidth="-Infinity" mnemonicParsing="false"
+                    prefHeight="50.0" prefWidth="140.0" text="Apply">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true"
+                             preserveRatio="true">
+                     <image>
+                        <Image url="@../images/baseline_check_circle_white_48dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+         <padding>
+            <Insets right="35.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1400.0" stylesheets="@../styles/dark.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="300.0" styleClass="anchor-pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/baseline_account_circle_white_48dp.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="forwarderLabel" alignment="BOTTOM_LEFT" styleClass="custom-label" textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="5.0" top="5.0" />
+               </padding></HBox>
+            <VBox alignment="TOP_CENTER" fillWidth="false" layoutY="130.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="300.0" styleClass="button-background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="150.0">
+               <children>
+                  <Button fx:id="switchTableButton" mnemonicParsing="false" prefHeight="90.0" prefWidth="275.0" styleClass="main-button" text="Switch table">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_swap_horiz_white_48dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="infoButton" mnemonicParsing="false" prefHeight="100.0" prefWidth="300.0" styleClass="main-button" text="Show info">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_info_white_48dp.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="changeTruckButton" mnemonicParsing="false" prefHeight="100.0" prefWidth="300.0" styleClass="main-button" text="Assign truck">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_sync_white_48dp.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="removeTruckButton" mnemonicParsing="false" prefHeight="100.0" prefWidth="300.0" styleClass="main-button" text="Unassign truck">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_delete_white_48dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="changeForwarderButton" mnemonicParsing="false" prefHeight="100.0" prefWidth="300.0" styleClass="main-button" text="Change forwarder">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_sync_white_48dp.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" layoutX="300.0" prefHeight="80.0" prefWidth="1100.0" styleClass="h-box" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="BOTTOM_CENTER" fillHeight="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="700.0" styleClass="pane__light" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="80.0" prefWidth="350.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <TextField fx:id="searchTextField" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="230.0" promptText="SEARCH">
+                           <HBox.margin>
+                              <Insets left="100.0" />
+                           </HBox.margin></TextField>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/baseline_search_white_48dp.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="210.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <MenuButton fx:id="sortButton" accessibleRole="BUTTON" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="70.0" prefWidth="200.0" text="Sort" textAlignment="CENTER" textFill="WHITE">
+                          <items>
+                              <MenuItem fx:id="menuItemDefault" mnemonicParsing="false" text="DEFAULT" />
+                            <MenuItem fx:id="menuItemIdAsc" mnemonicParsing="false" text="ID_NUMBER_ASC" />
+                            <MenuItem fx:id="menuItemIdDesc" mnemonicParsing="false" text="ID_NUMBER_DESC" />
+                              <MenuItem fx:id="menuItemFNameAsc" mnemonicParsing="false" text="FIRST_NAME_ASC" />
+                              <MenuItem fx:id="menuItemFNameDesc" mnemonicParsing="false" text="FIRST_NAME_DESC" />
+                              <MenuItem fx:id="menuItemLNameAsc" mnemonicParsing="false" text="LAST_NAME_ASC" />
+                              <MenuItem fx:id="menuItemLNameDesc" mnemonicParsing="false" text="LAST_NAME_DESC" />
+                          </items>
+                           <font>
+                              <Font name="System Italic" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/baseline_sort_white_48dp.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </MenuButton>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="1.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children></HBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="logOutButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="70.0" prefWidth="180.0" text="Log out" textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" styleClass="button-image">
+                           <image>
+                              <Image url="@../images/baseline_lock_white_48dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children></HBox>
+      <TableView fx:id="driversTableView" layoutX="310.0" layoutY="100.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="725.0" minWidth="1090.0" prefHeight="730.0" prefWidth="1090.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="305.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="100.0">
+        <columns>
+          <TableColumn fx:id="rowIdColumn" editable="false" maxWidth="1.7976931348623157E308" minWidth="79.0" resizable="false" sortable="false" text="#" />
+          <TableColumn fx:id="driverIdNumberColumn" editable="false" maxWidth="500.0" minWidth="250.0" prefWidth="250.0" sortable="false" text="ID Number" />
+            <TableColumn fx:id="firstNameColumn" editable="false" maxWidth="500.0" minWidth="250.0" prefWidth="250.0" sortable="false" text="First name" />
+            <TableColumn fx:id="lastNameColumn" editable="false" maxWidth="500.0" minWidth="250.0" prefWidth="250.0" sortable="false" text="Last name" />
+            <TableColumn fx:id="onRoadColumn" editable="false" maxWidth="500.0" minWidth="250.0" prefWidth="250.0" sortable="false" text="On road?" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="655.0" layoutY="826.0" prefHeight="50.0" prefWidth="390.0" spacing="20.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="655.0" AnchorPane.rightAnchor="355.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="230.0" styleClass="custom-label" text="Total number of cargoes: " textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalCargoesLabel" prefHeight="30.0" prefWidth="50.0" styleClass="custom-label" text="0" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Pane layoutX="300.0" layoutY="886.0" prefHeight="10.0" prefWidth="1100.0" styleClass="frame-pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="0.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="1027.0" layoutY="832.0" prefHeight="17.0" prefWidth="370.0" text="Single click: select driver | Double click: open cargo window" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="25.0">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
